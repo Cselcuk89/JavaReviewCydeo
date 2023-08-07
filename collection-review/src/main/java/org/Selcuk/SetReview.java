@@ -11,6 +11,7 @@ public class SetReview {
         mySet.add(new Student(7,"Ibadet"));
         mySet.add(new Student(8,"Ahmet"));
         mySet.add(new Student(9,"Muhabbet"));
+        mySet.add(new Student(9,"Muhabbet"));
         System.out.println(mySet);
         Set<Integer> numSet = new HashSet<>();
         numSet.add(1);
