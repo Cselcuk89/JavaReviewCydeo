@@ -1,6 +1,7 @@
 package org.Selcuk.doubleColonOperator;
 
 import java.util.function.BiFunction;
+import java.util.function.Consumer;
 
 public class Demo {
     public static void main(String[] args) {
@@ -31,6 +32,18 @@ public class Demo {
         //with double colon operator
         BiFunction<String,Integer,String> fn2 = String::substring;
         System.out.println(fn2.apply("Developer",6));
+        //using consumer interface with both lambda and double colon operator
+        //with lambda
+        Consumer<Integer> display = i -> System.out.println(i);
+        display.accept(20);
+        //with double colon operator
+        Consumer<Integer> display2 = System.out::println;
+        display2.accept(50);
+
+        BiFunction<MyClass,Integer,Double> v2 = MyClass::method;
+
+        BiFunction<String,String,String> v3 = String::concat;
+
 
 
 

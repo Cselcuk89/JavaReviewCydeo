@@ -10,6 +10,7 @@
         <module name="collection-review" />
         <module name="generics" />
         <module name="lambda-expressions" />
+        <module name="streams" />
       </profile>
     </annotationProcessing>
   </component>
